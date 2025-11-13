@@ -147,9 +147,8 @@ Covers:
 
 | Phase | Date | Notes |
 |-------|------|-------|
-| Start | **Tuesday, Nov 11, 2025** | Setup FastAPI + Mongo, models & auth |
-| Mid | **Nov 12–13, 2025** | Implemented OCR webhook, actions, and audit |
-| Finish | **Friday, Nov 14, 2025** | Testing, docs, and containerization |
+| Start | **Tuesday, Nov 11, 2025** | Setup FastAPI + Mongo, Auth, OCR webhook |
+| Finish | **Friday, Nov 14, 2025** | Actions, Audit, Testing, docs, and containerization |
 
 ---
 
