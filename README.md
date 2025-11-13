@@ -153,8 +153,3 @@ Covers:
 
 ---
 
-## 💬 Author
-
-**Your Name**  
-FastAPI backend demo project.  
-Feedback and PRs welcome! 🚀
