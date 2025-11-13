@@ -57,7 +57,10 @@ Swagger Docs → [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 Use a simple **JWT-like mock token** for testing:
 
 ```bash
-Authorization: Bearer eyJzdWIiOiAidV9kZW1vIiwgImVtYWlsIjogImRlbW9AZXhhbXBsZS5jb20iLCAicm9sZSI6ICJ1c2VyIn0=
+User Token:
+Authorization: Bearer eyJzdWIiOiJ1X2RlbW8iLCJlbWFpbCI6ImRlbW9AZXhhbXBsZS5jb20iLCJyb2xlIjoidXNlciJ9
+Admin Token
+Authorization: Bearer eyJzdWIiOiJ1X2RlbW8iLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwicm9sZSI6ImFkbWluIn0=
 ```
 
 - `admin` can view everything  

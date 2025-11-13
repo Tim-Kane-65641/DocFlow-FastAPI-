@@ -3,8 +3,7 @@ from datetime import datetime
 from app.schemas import OCRIn, OCRResp
 from app.core.auth import require_role, write_guard, CurrentUser
 from app.core.utils import classify_text, extract_unsubscribe, can_create_task_today, new_id, log_audit
-from app.db import get_db
-db = get_db()
+from app.db import db
 
 router = APIRouter(tags=["OCR"])
 

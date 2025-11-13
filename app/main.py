@@ -19,6 +19,7 @@ async def seed():
     if await db.documents.count_documents({}) == 0:
         uid = "u_demo"
         db.users.insert_one({"_id": uid, "email": "demo@example.com", "role": "user", "created_at": datetime.utcnow()})
+        db.users.insert_one({"_id": uid, "email": "admin@example.com", "role": "admin", "created_at": datetime.utcnow()})
         invoices = {"_id": new_id(), "name": "invoices-2025", "owner_id": uid, "created_at": datetime.utcnow()}
         letters  = {"_id": new_id(), "name": "letters",        "owner_id": uid, "created_at": datetime.utcnow()}
         await db.tags.insert_many([invoices, letters])
@@ -30,3 +31,4 @@ async def seed():
             {"_id": new_id(), "document_id": d2["_id"], "tag_id": letters["_id"],  "is_primary": True},
         ])
     print("Demo token (use as Bearer):", base64.b64encode(b'{"sub":"u_demo","email":"demo@example.com","role":"user"}').decode()) 
+    print("Admin token (use as Bearer):", base64.b64encode(b'{"sub":"u_demo","email":"admin@example.com","role":"admin"}').decode())
